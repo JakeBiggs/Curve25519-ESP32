@@ -1,9 +1,10 @@
+# Curve25519 for ESP32 
 An implementation of elliptic curve cryptography (ECC) using Curve25519. It includes functions for key generation, scalar multiplication, and computing shared secrets. The implementation is designed for use with ESP32 microcontrollers.
-# Requirements:
+## Requirements:
 - ESP32 That supports EspressIDF
 - Access to esp_system.h (found by installing the board)
 
-# Usage
+## Usage
 Key Generation:
 ```
 auto keys = generate_keys();
@@ -14,7 +15,7 @@ Computing Shared Secret:
 ```
 auto shared_secret = compute_shared(private_key, other_public_key);
 ```
-## Example:
+### Example:
 ```
 #include "Curve25519.h"
 
